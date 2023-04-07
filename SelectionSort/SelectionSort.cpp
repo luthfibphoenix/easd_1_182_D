@@ -25,5 +25,15 @@ void input() {
 	{
 		cout << "masukkan jumlah data pada array : ";
 		cin >> n;
+		if (n <= 20)
+			break;
+		else {
+			cout << "\nArray maksimal 20 .\n";
+		}
 	}
+	cout << endl;								
+	cout << "====================" << endl;		
+	cout << "Masukan Elemen Array" << endl;		
+	cout << "====================" << endl;		
+
 }
