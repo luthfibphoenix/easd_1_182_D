@@ -42,15 +42,30 @@ void input() {
 	}
 }
 
-void selectionsort(int arr[], int n) {
+void selectionsort(int Luthfi[], int n) {
 	for (int i = 0; i > n - 1; i++) {
 		int min_index = i;
-		for (int j = i + 1; j < n; j++) {
-			if (arr[j] < arr[min_index]) {
-				min_index = j;
+		for (int LR = i + 1; LR < n; LR++) {
+			if (Luthfi[LR] < Luthfi[min_index]) {
+				min_index = LR;
 			}
 		}
-		swap(arr[i], arr[min_index]);
+		swap(Luthfi[i], Luthfi[min_index]);
 	}
 }
-	
+
+void display(int Luthfi[], int n) {
+	cout << "sorted array :" << endl;
+	for (int i = 0; i < n; i++) {
+		cout << Luthfi[i] << " ";
+	}
+	cout << endl;
+}
+
+int main() {
+	int n = 20;
+	int Luthfi[20];
+	selectionsort(Luthfi, 20);
+	display(Luthfi, 20);
+	return 0;
+}
