@@ -12,3 +12,18 @@
 // 5.-Quadratic : bubblesort, selectionsort, dan insertionsort
 //   -Loglinear : mergesort, dan quicksort
 
+//6
+
+#include <iostream>
+using namespace std;
+
+int a[20];
+int n;
+
+void input() {
+	while (true)
+	{
+		cout << "masukkan jumlah data pada array : ";
+		cin >> n;
+	}
+}
