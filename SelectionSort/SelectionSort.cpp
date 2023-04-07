@@ -17,55 +17,54 @@
 #include <iostream>
 using namespace std;
 
-int a[20];
-int n;
+const int JumlahData = 10;
 
-void input() {
-	while (true)
-	{
-		cout << "masukkan jumlah data pada array : ";
-		cin >> n;
-		if (n <= 20)
-			break;
-		else {
-			cout << "\nArray maksimal 20 .\n";
-		}
-	}
-	cout << endl;
-	cout << "====================" << endl;
-	cout << "Masukan Elemen Array" << endl;
-	cout << "====================" << endl;
 
+void input(int Luthfi[], int n) {
+	cout << "Masukkan Panjang Data (<=10): ";
+	cin >> n;
+	cout << "Masukkan " << n << " data:\n";
 	for (int i = 0; i < n; i++) {
-		cout << "Data ke" << (i + 1) << ">";
-		cin >> a[i];
+		cout << "Data ke-" << i + 1 << ": ";
+		cin >> Luthfi[i];
 	}
 }
+		
+	
+
+	
 
 void selectionsort(int Luthfi[], int n) {
-	for (int i = 0; i > n - 1; i++) {
-		int min_index = i;
-		for (int LR = i + 1; LR < n; LR++) {
-			if (Luthfi[LR] < Luthfi[min_index]) {
-				min_index = LR;
+	for (int LR = 0; LR <= n - 2; LR++) {
+		int min_index = LR;
+		for (int i = LR + 1; i <= n - 1; i++) {
+			if (Luthfi[i] < Luthfi[min_index]) {
+				min_index = i;
 			}
 		}
-		swap(Luthfi[i], Luthfi[min_index]);
+		int temp = Luthfi[LR];
+		Luthfi[LR] = Luthfi[min_index];
+		Luthfi[min_index] = temp;
 	}
 }
 
 void display(int Luthfi[], int n) {
-	cout << "sorted array :" << endl;
-	for (int i = 0; i < n; i++) {
-		cout << Luthfi[i] << " ";
+	cout << endl;											
+	cout << "=================================" << endl;	
+	cout << "Element Array yang telah tersusun" << endl;	
+	cout << "=================================" << endl;	
+
+	for (int LR = 0; LR < n; LR++) {
+		cout << Luthfi[LR] << endl;
 	}
-	cout << endl;
 }
 
 int main() {
-	int n = 20;
-	int Luthfi[20];
-	selectionsort(Luthfi, 20);
-	display(Luthfi, 20);
+	int size = 28;
+	int n = 2 * 15 + 10 + 20;
+	int Luthfi[10];
+	input(Luthfi, 10);
+	selectionsort(Luthfi, 10);
+	display(Luthfi, 10);
 	return 0;
 }
