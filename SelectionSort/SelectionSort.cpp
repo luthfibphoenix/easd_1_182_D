@@ -1,1 +1,3 @@
 // 1.Suatu algoritma dibutuhkan untuk menyelesaikan suatu masalah karena algoritma merupakan serangkaian instruksi langkah demi langkah yang dirancang untuk memecahkan masalah tertentu.
+// 2.-Linear Data Structure: Linear data structure adalah struktur data yang elemen-elemennya disimpan secara teratur dalam urutan tertentu. Contoh dari struktur data ini adalah array, linked list, stack, dan queue.
+//   -Non-Linear Data Structure: Non-linear data structure adalah struktur data yang elemen-elemennya disimpan tidak dalam urutan tertentu. Contoh dari struktur data ini adalah tree, graph, dan heap. Struktur data ini memungkinkan penyimpanan elemen yang lebih kompleks dan lebih fleksibel dibandingkan dengan linear data structure.
