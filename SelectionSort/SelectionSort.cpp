@@ -9,3 +9,6 @@
 
 // 4.SelectionSort karena paling efisien mengurutkan data karena memiliki kompleksitas waktu yang relatif cepat
 
+// 5.-Quadratic : bubblesort, selectionsort, dan insertionsort
+//   -Loglinear : mergesort, dan quicksort
+
